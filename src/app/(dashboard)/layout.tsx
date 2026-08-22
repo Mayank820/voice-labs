@@ -14,7 +14,7 @@ export default async function DashboardLayout({
         <SidebarProvider defaultOpen={defaultOpen} className="h-svh">
             <DashboardSidebar />
             <SidebarInset className="min-h-0 min-w-0">
-                <main className="flex w-full flex-1 flex-col overflow-hidden">
+                <main className="flex w-full flex-1 flex-col overflow-y-auto">
                     {children}
                 </main>
             </SidebarInset>
